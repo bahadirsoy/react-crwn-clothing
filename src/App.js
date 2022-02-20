@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import HomePage from '../src/pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
+import Header from './components/header/header.component';
 
 import {
   BrowserRouter as Router,
@@ -18,11 +19,12 @@ function App() {
 
       {/* <Route path='/' component={HomePage}/>
       <Route path='/hats' component={HatsPage}/> */}
+
+      <Header></Header>
       
       <Routes>
 
         <Route path='/' element={<HomePage />}/>
-
         <Route path='/shop' element={<ShopPage/>}/>
 
       </Routes>
